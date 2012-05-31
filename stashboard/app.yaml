@@ -10,6 +10,10 @@ builtins:
 - appstats: on
 - remote_api: on
 
+inbound_services:
+- xmpp_message
+- xmpp_presence
+
 handlers:
 - url: /console/.*
   script: $PYTHON_LIB/google/appengine/ext/admin
